@@ -1,0 +1,113 @@
+body
+{
+	background-color: #2699FB;
+}
+
+
+article
+{
+	background-color: #AAAAAA;
+	border-color: #707070;
+	border-style: dashed;
+	border-width: 5px;
+	margin: 1em 10% 1em 10%;
+	padding: 0;
+	
+	color: #FFFFFF;
+	font-family: Ariel;
+	size: 14px;
+	font-style: italic;
+}
+
+h1
+{
+	color: #444444;
+	font-family: Ariel;
+	size: 80px;
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+h2
+{
+	font-family: Ariel;
+	size: 63px;
+	font-variant: small-caps;
+}
+
+h3
+{
+	font-family: Berlin Sans FB;
+	size: 80 px;
+}
+
+
+aside
+{
+	background-color: #F5F5F5;
+	border-color: #000000;
+	border-style: dashed;
+	border-width: 5px;
+	margin: 1em 10% 1em 10%;
+	padding: 0;
+}
+
+#grid-container
+{
+	background-color: #EEE;
+	border: solid 10px #666;
+	text-align: left;
+	padding: 20px 0;
+	font-size: 30px;
+	
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+}
+
+#grid-container > article1
+{
+	background-color: #F8F;
+	border: solid 10px #F0F;
+	padding: 10px;
+}
+
+#grid-containter > article2
+{
+	background-color: #F5F5F5;
+	border: solid 5px #000;
+	padding: 5 px;
+}
+
+img
+{
+	width: 300px; 
+	height: 175px;
+}
+
+
+#foto1, #foto2
+{
+	float: right;
+}
+
+footer
+{
+	background-color: #FFFFFF;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 2px;
+	margin: 2em 10% 1em 10%;
+}
+
+.nav 
+{
+	background-color: #FFFFFF;
+	margin: 2em 10% 1em 10%;
+}
+
+#nav
+{
+	margin: 1em 5% 1em 5%;
+	display: inline;
+}
