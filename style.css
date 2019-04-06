@@ -1,28 +1,60 @@
+
+@font-face 
+{
+	font-family: "orangejuice";
+	src:url(http://bjj-jeugd.com/639567/fonts/orangejuice.ttf);
+}
+
+#appletouch180x180
+{
+		width: 180px;
+		height: 180px;
+}
+
+
+#icon32x32
+{
+	width: 32px;
+	height: 32px;
+}
+
+
+#icon16x16
+{
+	width: 16px;
+	height: 16px;
+}
+
 body
 {
 	background-color: #2699FB;
-	font-family: Arial, sans-serif, open sans;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Dit is de video */
 
 #MyVideo
 {
-	position: static;
+	position: fixed;
+	z-index: -99999;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
-	min-height: 300px;
+	min-height: 100%;
 }
 
 #H1Referral
 {
-	position: static;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
+    display: block;
+    top: 42%;
+	min-width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 500px;
 	padding: 20px;
 	color: #f1f1f1;
 	
-	font-family: Ariel;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	font-size: 35px;
 }
@@ -36,38 +68,39 @@ article
 	margin: 1em 10% 1em 10%;
 	padding: 0;
 	
-	font-family: Ariel;
+	font-family: 'Nunito', Arial, sans-serif;
 	font-size: 15px;
 }
+	
 
 h1
 {
 	color: #444444;
-	font-family: Ariel;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 80px;
 	font-style: italic;
 }
 
 h2
 {
-	font-family: Ariel;
+	font-family: 'orangejuice', Arial, Helvetica;
 	font-size: 63px;
 	font-variant: small-caps;
 }
 
 h3
 {
-	font-family: Berlin Sans FB;
-	font-size: 80 px;
+	font-family: Berlin Sans FB, Helvetica, sans-serif;;
+	font-size: 80px;
 }
 
 
 aside
 {
 	background-color: #F5F5F5;
-	border-color: #000000;
+	border-color: #222222;
 	border-style: dashed;
-	border-width: 5px;
+	border-width: 2px;
 	margin: 1em 10% 1em 10%;
 	padding: 0;
 }
@@ -106,7 +139,7 @@ col:first-child
 
 .ulLightUp:nth-child(odd)
 {
-	background: rgba(255, 255, 0, 0.4);
+	background-color: rgba(255, 255, 0, 0.4);
 }	
 
 #grid-container
@@ -117,9 +150,9 @@ col:first-child
 	padding: 20px 0;
 	font-size: 30px;
 	
-	display:grid;
-	grid-template-columns: auto auto;
-	grid-gap: 20px;
+	display: grid;
+	grid-columns: auto auto;
+	grid-gap: 20px 50px;
 }
 
 #grid-container > article1
@@ -129,7 +162,7 @@ col:first-child
 	padding: 10px;
 }
 
-#grid-containter > article2
+#grid-container > article2
 {
 	background-color: #F5F5F5;
 	border: solid 5px #000;
@@ -150,12 +183,12 @@ img
 
 footer
 {
-	background-color: #0000000;
+	background-color: #222222;
 	border-style: solid;
 	border-width: 2px;
 	margin: 2em 10% 1em 10%;
 	
-	font-family: Ariel;	
+	font-family: Arial, Helvetica, sans-serif;	
 	color: #FFFFFF;
 	font-size: 25px;
 }
@@ -163,32 +196,47 @@ footer
 .nav 
 {
 	background-color: #FFFFFF;
-	margin: 2em 10% 1em 10%;
-}
-
-#nav
-{
+	border-style: solid;
+	border-width: 20px;
+	border-color: #FFFFFF;
 	margin: 1em 5% 1em 5%;
 	display: inline;
 }
 
 
 
+
 #TextReferral
 {
-	font-family: Ariel;
-	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #222222;
 	font-size: 30px;
 }
 	
 #GrayText 
 {
-	font-family: Ariel;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #F5F5F5;
 	font-size: 30px;
 }
 
-
+/* Pseudo Classes */
+a:link
+{
+	color:#FF0000;
+}
+a:visited
+{
+	color:#00FF00;
+}
+a:hover
+{
+	color: #FF00FF;
+}
+a:active
+{
+	#0000FF;
+}
 
 @media screen and (min-width: 1px) and (max-width: 475px)
 {
@@ -210,12 +258,12 @@ footer
 		grid-gap: 20px;
 	}
 
-	#foto1, #foto2, #article2, #imgKarate, #imgPlezier, #notmobile
+	#foto1, #foto2, #article2, #imgKarate, #imgPlezier, #notmobile, #H1Referral, #MyVideo
 	{
 		display: none;
 	}
 	
-	#imgLijst
+	.imgLijst
 	{
 		height: 100px;
 		width: auto;
@@ -227,18 +275,16 @@ footer
 	width: 150px;
 	}
 	
-			#cookies
+	.cookies
 	{
-		background-color: pink;
+		background-color: #FFB6C1;
 		position: fixed;
-		bottom: 0;
-		right: 0;
-		width: auto;
+		z-index: 9999;
 		height: 50px;
 		border: 3px solid red;
 		
 		margin: 1em 10% 1em 10%;
-		font-style: Ariel;
+		font-family: Helvetica, Arial, sans-serif;
 		font-size: 15px;
 	}
 }
@@ -247,11 +293,12 @@ footer
 {
 	body
 	{
-		background-color: lightblue;
+		background-color: #D9E8FD;
 	}
 	
 	#grid-container
 	{
+		display: grid;
 		grid-template-columns: auto;
 	}
 	
@@ -278,18 +325,16 @@ footer
 	width: 250px;
 	}
 	
-		#cookies
+	.cookies
 	{
-		background-color: pink;
+		background-color: #FFB6C1;
 		position: fixed;
-		bottom: 0;
-		right: 0;
-		width: auto;
+		z-index: 9999;
 		height: 50px;
-		border: 3px solid red;
+		border: 3px solid #FF0000;
 		
 		margin: 1em 10% 1em 10%;
-		font-style: Ariel;
+		font-family: Helvetica, Arial, sans-serif;
 		font-size: 15px;
 	}
 	
@@ -310,21 +355,18 @@ footer
 		margin: 1em 3% 1em 3%;
 	}
 	
-	#cookies
+	.cookies
 	{
-		background-color: pink;
-		z-index: 5;
+		background-color: #FFB6C1;
 		position: fixed;
-		bottom: 0;
-		right: 0;
-		width: auto;
+		z-index: 9999;
 		height: 100px;
 		border: 3px solid red;
 		
 		margin: 1em 10% 1em 10%;
-		font-style: Ariel;
+		font-family: Helvetica, Arial, sans-serif;
 		font-size: 30px;
-		font-variant: all-caps;
+		font-variant: small-caps;
 	}
 		
 }
