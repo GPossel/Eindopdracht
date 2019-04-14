@@ -65,11 +65,14 @@ article
 	border-color: #707070;
 	border-style: dashed;
 	border-width: 5px;
-	margin: 1em 10% 1em 10%;
+	margin: 0em 5% 1em 5%;
 	padding: 0;
 	
 	font-family: 'Nunito', Arial, sans-serif;
 	font-size: 15px;
+	
+	float: left;
+
 }
 	
 
@@ -97,13 +100,59 @@ h3
 
 aside
 {
+	height: 500px;
+	width: auto;
+	
 	background-color: #F5F5F5;
 	border-color: #222222;
 	border-style: dashed;
 	border-width: 2px;
-	margin: 1em 10% 1em 10%;
+	margin: 1em 5% 1em 5%;
+	padding: 0;
+	
+	float: left;
+	font-size: 25px;
+
+	
+}
+
+#foto-aside
+{
+	height: 300px;
+	width: auto;
+	margin: 1em 1% 1em 5%;
 	padding: 0;
 }
+
+/* hier probeer ik de aside rechts uit te lijnen. Dit probeer ik op de Referral pagina met de id="grid-container2"*/
+#grid-container2
+{
+	background-color: #EEE;
+	border: solid 10px #666;
+	text-align: left;
+	padding: 20px 0;
+	font-size: 30px;
+	
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px 50px;
+}
+
+#grid-container2 > article1
+{
+	background-color: #F8F;
+	border: solid 10px #F0F;
+	margin: 0em 5% 1em 5%;
+	padding: 0px;
+}
+
+#grid-container2 > article2
+{
+	background-color: #F5F5F5;
+	border: solid 5px #000;
+	padding: 0px;
+}
+	
 
 table
 {
@@ -142,32 +191,9 @@ col:first-child
 	background-color: rgba(255, 255, 0, 0.4);
 }	
 
-#grid-container
-{
-	background-color: #EEE;
-	border: solid 10px #666;
-	text-align: left;
-	padding: 20px 0;
-	font-size: 30px;
-	
-	display: grid;
-	grid-columns: auto auto;
-	grid-gap: 20px 50px;
-}
 
-#grid-container > article1
-{
-	background-color: #F8F;
-	border: solid 10px #F0F;
-	padding: 10px;
-}
 
-#grid-container > article2
-{
-	background-color: #F5F5F5;
-	border: solid 5px #000;
-	padding: 5 px;
-}
+
 
 img
 {
@@ -247,11 +273,31 @@ a:hover
 		display: none;
 	}
 
-	#grid-container
+	#grid-container2
 	{
-		display:grid;
+		display: grid;
 		grid-template-columns: auto;
-		grid-gap: 20px;
+	}
+	
+	h1, h2, h3
+	{
+	font-size: 20px;
+	}
+	
+	#grid-container2 > #article1
+	{
+		font-size: 15px;
+	}
+	
+	#article2
+	{
+		display: none;
+	}
+	
+	#grid-container2 > aside
+	{
+	height: auto;
+	width: auto;
 	}
 
 	#foto1, #foto2, #article2, #imgKarate, #imgPlezier, #notmobile, #H1Referral, #MyVideo
@@ -292,11 +338,23 @@ a:hover
 		background-color: #D9E8FD;
 	}
 	
-	#grid-container
+	#grid-container2
 	{
 		display: grid;
 		grid-template-columns: auto;
 	}
+	
+	#grid-container2 > article2
+	{
+		display: none;
+	}
+	
+	#grid-container2 > aside
+	{
+	height: auto;
+	width: auto;
+	}
+	
 	
 	#foto1, #foto2
 	{
